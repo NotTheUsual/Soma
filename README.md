@@ -1,6 +1,8 @@
 #SOMA
 
-Soma is an API for storing and analysing UK blood test results. The documentation is below. I'll add more to this shortly.
+Soma is an API for storing and analysing UK blood test results. Part of the final project created by [Megan Folsom](https://github.com/mfolsom), [Makis Otman](https://github.com/Maikon), [Jorja Hung](https://github.com/jorjahung) and myself for Makers Academy.
+
+The documentation is below. I'll add more to this shortly.
 
 ## Documentation
 
