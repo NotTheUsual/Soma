@@ -12,8 +12,10 @@ Avaiable endpoints
 get '/blood-tests/legend'
 ```
 
-Has all the metadata about a blood test</p>
-  <pre><code>{
+Has all the metadata about a blood test
+
+```javascript
+{
   "hb":{
     "name":"Hb",
     "fullname":"Haemoglobin",
@@ -91,11 +93,19 @@ Has all the metadata about a blood test</p>
     "min":0,
     "max":5
   }
-}</code></pre>
-  <h2>all blood tests</h2>
-  <code>get '/blood-tests/users/:user_id'</code>
-  <p>Has all the blood tests for a user</p>
-  <pre><code>[{
+}
+```
+
+### all blood tests
+
+```ruby
+get '/blood-tests/users/:user_id'
+```
+
+Has all the blood tests for a user
+
+```javascript
+[{
   "id":6,
   "taken_on":"2014-03-25",
   "created_at":"2014-03-28T09:36:23.109Z",
@@ -130,23 +140,38 @@ Has all the metadata about a blood test</p>
   "esr":25.0,
   "crp":"4",
   "user_id":2
-}]</code></pre>
+}]
+```
 
-  <h2>blood tests for a particular test</h2>
-  <code>get '/blood-tests/users/:user_id/:test_name'</code>
-  <p>Has all the results in a particular test for a user</p>
-  <pre><code>[{
+### blood tests for a particular test
+
+```ruby
+get '/blood-tests/users/:user_id/:test_name'
+```
+
+Has all the results in a particular test for a user
+
+```javascript
+[{
   "date":"2014-03-17",
   "result":15.0
 },
 {
   "date":"2014-03-25",
   "result":12.0
-}]</code></pre>
-  <h2>individual blood tests</h2>
-  <code>get '/blood-tests/:id.json'</code>
-  <p>Has the data for one blood test</p>
-  <pre><code>{
+}]
+```
+
+### individual blood tests
+
+```ruby
+get '/blood-tests/:id.json'
+```
+
+Has the data for one blood test
+
+```javascript
+{
   "id":6,
   "taken_on":"2014-03-25",
   "created_at":"2014-03-28T09:36:23.109Z",
@@ -164,11 +189,18 @@ Has all the metadata about a blood test</p>
   "crp":"6",
   "user_id":2
 }
-</code></pre>
-  <h2>Dangerous results</h2>
-  <code>get '/blood-tests/:user_id/dangerous-results'</code>
-  <p>All the out of range results for a user</p>
-  <pre><code>[{
+```
+
+### Dangerous results
+
+```ruby
+get '/blood-tests/:user_id/dangerous-results'
+```
+
+All the out of range results for a user
+
+```javascript
+[{
   "id":6,
   "taken_on":"2014-03-25",
   "neutrophils":8.0,
@@ -180,12 +212,20 @@ Has all the metadata about a blood test</p>
   "neutrophils":9.0,
   "lymphocytes":6.0
 }]
-</code></pre>
-  <h2>post new blood test</h2>
-  <code>post '/blood-tests/remote'</code>
-  <p>Adds a new blood test from the client</p>
+```
 
-  <h2>Register new user</h2>
-  <code>post '/users'</code>
-  <p>Registers a user in the Soma database</p>
-</section>
+### post new blood test
+
+```ruby
+post '/blood-tests/remote'
+```
+
+Adds a new blood test from the client
+
+### register new user
+
+```ruby
+post '/users'
+```
+
+Registers a user in the Soma database
